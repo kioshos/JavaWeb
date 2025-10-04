@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Catalogue implements Repository<PaperInfo>{
-    private ArrayList<PaperInfo> papers;
+    private ArrayList<PaperInfo> papers = new ArrayList<PaperInfo>();
     @Override
     public void addItem(@NonNull PaperInfo item) {
         papers.add(item);
